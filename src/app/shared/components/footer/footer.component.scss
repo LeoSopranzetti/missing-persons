@@ -1,0 +1,141 @@
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-top: var(--colorLine) solid 1px;
+  background: linear-gradient(#000000 0%,var(--colorPrimary) 100%);
+
+  .container {
+
+    min-height: auto;
+
+    .link-items {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .link-titles {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: -0.06px;
+      color: var(--colorWhite);
+      opacity: 0.6;
+      margin-bottom: 20px;
+    }
+
+    .link-items a, .email {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: -0.06px;
+      color: var(--colorWhite);
+      margin-bottom: 10px;
+    }
+
+    .link-items a:hover {
+      color: var(--colorWhite);
+      transition: .2s;
+      transform: scale(1.05);
+      text-decoration: none;
+    }
+
+
+    .link-items .vale-presente, .help, .contract {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-items  {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+
+    .logo-items .social  {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+
+    .social {
+      .icon{
+        color: var(--colorWhite);
+        margin-right: 7px;
+        font-size: 20px;
+      }
+      a:hover{
+        cursor: pointer;
+      }
+
+      .icon:hover{
+        cursor: pointer;
+      }
+    }
+
+    .logo-items .social a  {
+      margin-right: 30px;
+    }
+  }
+
+}
+
+a{
+  text-decoration: none;
+}
+
+
+@media (max-width: 992px){
+
+  .footer{
+    padding-top: 70px;
+
+    .link-items .vale-presente, .help, .contract {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .link-items .help .link-titles {
+      margin-top: 50px;
+    }
+
+    .link-items .contract .link-titles {
+      margin-top: 50px;
+    }
+
+    .link-items  .link-titles {
+      margin-top: 50px;
+    }
+
+
+    .logo-items .logo, .social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .social{
+      text-align: center;
+
+      a{
+        margin-bottom: 20px !important;
+      }
+    }
+
+
+    .logo-items .logo {
+      margin-bottom: 50px;
+    }
+
+    .logo-items {
+      margin-top: 50px;
+    }
+  }
+
+
+}
+
+
+

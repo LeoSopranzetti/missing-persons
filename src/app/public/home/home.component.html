@@ -1,0 +1,28 @@
+<nav></nav>
+
+    <div class="container">
+
+        <div class="list-container col-12" *ngIf="peoples.length > 0 ;else empty">
+            <div *ngFor="let item of this.peoples" class="col-lg-3">
+                <people-card   [people]="item"></people-card >
+            </div>
+
+        </div>
+        
+        <div class="paginated-buttons">
+            <button class="pagination-button" (click)="prevPage()" [disabled]="currentPageIndex === 0 "><fa-icon class="icon" [icon]="faChevronLeft"></fa-icon> Página Anterior</button>
+            <button class="pagination-button" (click)="nextPage()" [disabled]="peoples.length <= 0 || peoples.length <  12">Próxima Página <fa-icon class="icon" [icon]="faChevronRight"></fa-icon></button>
+        </div>
+    </div>
+
+<footer></footer>
+
+
+<ng-template #empty>
+    <div class="not-found fade-in">
+      <div class="card  col-12 col-lg-5 col-sm-12 m-t-45">
+        <img src="../../../assets/imgs/empty.svg" alt="Vázio">
+        <p class="error-text">Nenhum resultado encontrado!</p>
+      </div>
+    </div>
+  </ng-template>

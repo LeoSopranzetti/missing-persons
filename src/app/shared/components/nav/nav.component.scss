@@ -1,0 +1,44 @@
+.header{
+    min-height: 5vh;
+    background-color: var(--colorPrimary);
+    background: linear-gradient(#000000 0%,var(--colorPrimary) 100%);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: var(--colorLine)  solid 1px;
+  
+    .title{
+      color: #FAFAFA;
+      font-family: 'Lobster', cursive;
+      font-size: 25px;
+      margin-left: 10px;
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+  
+  
+    .title:hover{
+      cursor: pointer;
+    }
+  }
+  
+  .full-with-dialog {
+  
+    width: 500px;
+  
+    @media (max-width: 568px) {
+      width: 440px !important;
+    }
+  
+    @media (max-width: 468px) {
+      width: 340px !important;
+    }
+  
+    @media (max-width: 368px) {
+      width: 300px !important;
+    }
+  }
+  
