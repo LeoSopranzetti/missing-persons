@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { faFacebook, faInstagram, faLinkedin, faTwitter, faYoutube} from '@fortawesome/free-brands-svg-icons';
-import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'footer',

@@ -1,0 +1,168 @@
+
+
+.container{
+  padding-bottom: 50px;
+
+  .img-home{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .search-section{
+    display: flex;
+    justify-content: center;
+
+    .m-t-45{
+      margin-top: 45px;
+    }
+
+    .input-wrapper{
+      position: relative;
+
+      .icon{
+        position: absolute;
+        top: 8px;
+        left: 400px;
+        color: var(--colorIcon) !important;
+      }
+    }
+
+    .secondary-section{
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    
+
+    .tertiary-section{
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+
+      .custom-radio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .custom-radio input {
+        display: none;
+      }
+      
+      .custom-radio label {
+        cursor: pointer;
+        padding: 8px;
+        border: 2px solid var(--coloRadioButton);
+        border-radius: 4px;
+        color: var(--colorWhite);
+        background-color: var(--coloRadioButton);
+        width: 100%;
+        text-align: center;
+        
+      }
+      
+      .custom-radio input:checked + label {
+        background-color: var(--colorButton);
+        border-color: var(--colorButton);
+        color: var(--colorWhite);
+      }
+    }
+
+    .clean-section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin:10px 0 30px 0;
+    }
+    
+  }
+
+  .list-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+
+    .details{
+      cursor: pointer;
+    }
+  }
+
+  .paginated-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0 25px 0;
+
+    .pagination-button {
+      padding: 8px 16px;
+      margin: 4px;
+      background-color: var(--colorButton);
+      color: var(--colorWhite);
+      border: 1px solid var(--colorButton);
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .pagination-button:hover{
+      background-color: var(--colorWhite);
+      color: var(--colorPaginationButtonHover);
+    }
+    
+    .pagination-button:disabled {
+      background-color: var(--colorPaginationButtonDisabled);
+      border: 1px solid var(--colorPaginationButtonDisabled);
+      color: #666;
+      cursor: not-allowed;
+    }
+    
+    .pagination-button i {
+      margin-left: 4px;
+    }
+  }
+
+  .hide {
+    display: none;
+  }
+  
+  .not-found{
+    display: flex;
+    justify-content: center;
+
+    .card{
+      padding: 30px;
+
+      img{
+        max-height: 250px;
+      }
+      .error-text{
+        text-align: center;
+        margin-bottom: 0;
+        color: var(--colorPrimary);
+        color: var(--colorSubtitle);
+        font-size: 1.125rem;
+        margin-top: 20px;
+      }
+    }
+
+  }
+
+
+}
+
+@media screen and (max-width: 575px){
+  .icon{
+    left: 340px !important;
+  }
+}
+

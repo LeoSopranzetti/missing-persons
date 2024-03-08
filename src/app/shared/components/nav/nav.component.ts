@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'nav',
@@ -10,13 +10,14 @@ export class NavComponent implements OnInit {
 
   constructor(
     private router : Router,
+    private activateRoute: ActivatedRoute
   ) { }
 
   ngOnInit() {
   }
 
-  goToHome(){
-    this.router.navigate(['home']);
+  public goToHome(){
+    this.router.navigate(['home'], {relativeTo: this.activateRoute});
   }
 
 }

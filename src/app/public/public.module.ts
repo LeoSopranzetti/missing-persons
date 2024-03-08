@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PublicRoutingModule } from './public-routing.module';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
 import { MatDialogModule } from '@angular/material/dialog';
-import { HomeComponent } from './home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { PeopleCardComponent } from './people-card/people-card.component';
+import { MatPseudoCheckboxModule } from '@angular/material/core';
+import {MatRadioModule} from '@angular/material/radio';
+import { PersonCardComponent } from './components/person-card/person-card.component';
+import { HomeComponent } from './components/home/home.component';
+import { PersonDetailsComponent } from './components/person-details/person-details.component';
 
 @NgModule({
   imports: [
@@ -15,11 +18,15 @@ import { PeopleCardComponent } from './people-card/people-card.component';
     ReactiveFormsModule,
     SharedModule,
     MatDialogModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MatPseudoCheckboxModule,
+    MatRadioModule,
+    FormsModule
   ],
   declarations: [
     HomeComponent,
-    PeopleCardComponent
+    PersonCardComponent,
+    PersonDetailsComponent
   ]
 })
 export class PublicModule { }

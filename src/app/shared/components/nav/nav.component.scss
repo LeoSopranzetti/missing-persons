@@ -1,5 +1,5 @@
 .header{
-    min-height: 5vh;
+    min-height: 10vh;
     background-color: var(--colorPrimary);
     background: linear-gradient(#000000 0%,var(--colorPrimary) 100%);
     display: flex;
@@ -11,34 +11,21 @@
     border-bottom: var(--colorLine)  solid 1px;
   
     .title{
-      color: #FAFAFA;
-      font-family: 'Lobster', cursive;
-      font-size: 25px;
       margin-left: 10px;
       margin-bottom: 0;
       margin-right: 10px;
+      font-size: 3rem;
+      line-height: 2.935rem;
+      background: linear-gradient(to bottom, #33A8DB, #1472B7);
+      color: transparent;
+      background-clip: text;
+      display: inline-block;
+      font-weight: 900;
     }
-  
   
     .title:hover{
       cursor: pointer;
     }
   }
-  
-  .full-with-dialog {
-  
-    width: 500px;
-  
-    @media (max-width: 568px) {
-      width: 440px !important;
-    }
-  
-    @media (max-width: 468px) {
-      width: 340px !important;
-    }
-  
-    @media (max-width: 368px) {
-      width: 300px !important;
-    }
-  }
+
   

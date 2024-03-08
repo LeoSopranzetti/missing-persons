@@ -1,0 +1,48 @@
+
+<div class="wrapper fade-in">
+
+  <div class="card col-12 col-lg-12 col-sm-12">
+
+    <div class="col-12 img-wrapper" >
+      <img *ngIf="person?.sexo !== 'FEMININO' && person?.urlFoto === null" class="col-4 col-lg-2 col-sm-4" src="../../../assets/imgs/man.png" alt="">
+      <img *ngIf="person?.sexo === 'FEMININO' && person?.urlFoto === null" class="col-4 col-lg-2 col-sm-4" src="../../../assets/imgs/woman.png" alt="">
+      <img *ngIf="person?.urlFoto !== null"  [src]="person.urlFoto" alt="Imagem" class="col-4 col-lg-2 col-sm-4">
+    </div>
+
+    <div class="item col-12 col-lg-12 col-sm-12 col-xs-12">
+      <p class="title text-center"><fa-icon class="icon" [icon]="faSignature"></fa-icon> Nome Completo</p>
+      <p class="sub-title text-center">{{person.nome}}</p>
+    </div>
+
+    <div class="item col-12 col-lg-4 col-sm-12 col-xs-12">
+      <p class="title text-center"><fa-icon class="icon" [icon]="faPersonHalfDress"></fa-icon> Gênero</p>
+      <p class="sub-title text-center">{{person.sexo}}</p>
+    </div>
+
+    <div class="item col-12 col-lg-4 col-sm-12 col-xs-12">
+      <p class="title text-center"><fa-icon class="icon" [icon]="faCakeCandles"></fa-icon> Idade</p>
+      <p class="sub-title text-center">{{person.idade}}</p>
+    </div>
+
+
+    <div *ngIf="isDetails" class="social col-12 col-lg-12 col-md-12  col-xs-12 m-l-0 m-r-0">
+      <p class="title">Compartilhe nas Redes Sociais</p>
+      <div class="icons col-12 col-lg-12 col-md-12  col-xs-12 ">
+        <a class=""><fa-icon class="icon" [icon]="faInstagram"></fa-icon></a>
+        <a ><fa-icon class="icon" [icon]="faFacebook"></fa-icon></a>
+        <a><fa-icon class="icon" [icon]="faTwitter"></fa-icon></a>
+        <a><fa-icon class="icon" [icon]="faWhatsapp"></fa-icon></a>
+      </div>
+
+    </div>
+
+    <div *ngIf="isDetails" class="button col-12 col-lg-12 col-sm-12">
+      <div class="col-6 text-center">
+        <button (click)="goToHome()" class="col-12 col-lg-7 col-sm-6 btn btn-primary">Home</button>
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
